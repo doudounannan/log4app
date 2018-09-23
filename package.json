@@ -1,0 +1,33 @@
+{
+  "name": "log4app",
+  "version": "1.0.0-alpha.1",
+  "description": "log4app",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js src/**/*",
+    "lint-fix": "eslint index.js --fix",
+    "pre-commit": "npm run lint",
+    "test": "NODE_ENV=development node test/index.js"
+  },
+  "pre-commit": "pre-commit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doudounannan/log4app.git"
+  },
+  "keywords": [
+    "log4app"
+  ],
+  "author": "qq616079491@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doudounannan/log4app/issues"
+  },
+  "homepage": "https://github.com/doudounannan/log4app#readme",
+  "dependencies": {
+    "chalk": "^2.4.1"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "eslint-config-web-app": "^1.0.0"
+  }
+}
